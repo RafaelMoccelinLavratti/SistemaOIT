@@ -1,41 +1,41 @@
-import tkinter as tk 
-from tkinter import messagebox
+from tkinter import*
+from tkinter import Tk, ttk
 
-#Janela
-janela = tk.Tk()
-#Define o tamanho da Janela
-janela.geometry("600x600")
-
-
+#Janela principal
+janela = Tk()
+janela.title("Login")
+janela.geometry("700x500")
 
 
 
 
+#Label / Texto
+label = Label (janela, text="Login")
 
-#Verificar se o login e senha são válidos
-def login_funcao():
-    #verifica se os campos login e senha estão preenchidos
-    if login.get() == "" or senha.get() == "":
-        tk.messagebox.showerror("Erro", "Preencha todos os campos.")
-        return
-    #Verifique se o login e a senha são válidos
-    if login.get() == "admin" and senha.get() == "admin":
-        tk.messagebox.showerror("Sucesso!", "Login bem sucessido")
-        janela.destroy()
-    else:
-        tk.messagebox.showerror("Erro", "Login ou senha invalidos")
-        
-        #Botao de Login
-botao_login = tk.Button(janela, text="Login", command=login_funcao)
+#Posição da Label
+label.place(x=260, y=190)
+
+#Label / Texto
+label = Label (janela, text= "Senha")
 
 
-#Campo de login e senha
-login = tk.Entry(janela)
-senha = tk.Entry(janela, show="*")
+#Posição da Label
+label.place(x=260, y=210)
 
-#Posições
-login.grid(row=0, column=0)
-senha.grid(row=1, column=0)
-botao_login.grid(row=4, column=0)
+
+#Botão Realizar Login
+botao = Button(janela, text="Realizar Login")
+
+#Posição do botão
+botao.place(x=380, y=280)
+
+#Botão Esqueci a senha
+botao = Button(janela, text="Esqueci a senha")
+
+#Posição do botão
+botao.place(x=250, y=280)
+
+
+
 
 janela.mainloop()
