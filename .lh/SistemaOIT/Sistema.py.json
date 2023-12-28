@@ -1,0 +1,66 @@
+{
+    "sourceFile": "SistemaOIT/Sistema.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1703676248771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1703676256733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,6 @@\n \r\n #Função para verificar login\r\n def verificar_login():\r\n     usuario = entry_usuario.get()\r\n-    \r\n-    \r\n+    senha = entry\r\n \r\n"
+                },
+                {
+                    "date": 1703676262672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \r\n #Função para verificar login\r\n def verificar_login():\r\n     usuario = entry_usuario.get()\r\n-    senha = entry\r\n+    senha = entry_senha.get()\r\n \r\n"
+                },
+                {
+                    "date": 1703676320808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,7 @@\n #Função para verificar login\r\n def verificar_login():\r\n     usuario = entry_usuario.get()\r\n     senha = entry_senha.get()\r\n+    \r\n+    3\r\n \r\n"
+                },
+                {
+                    "date": 1703676329672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n def verificar_login():\r\n     usuario = entry_usuario.get()\r\n     senha = entry_senha.get()\r\n     \r\n-    3\r\n+    #Adiciona um novo usuario \r\n \r\n"
+                },
+                {
+                    "date": 1703676356853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n def verificar_login():\r\n     usuario = entry_usuario.get()\r\n     senha = entry_senha.get()\r\n     \r\n-    #Adiciona um novo usuario \r\n+    #Verifica se o login e senha existem\r\n \r\n"
+                },
+                {
+                    "date": 1703676363968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,6 @@\n     usuario = entry_usuario.get()\r\n     senha = entry_senha.get()\r\n     \r\n     #Verifica se o login e senha existem\r\n+    if usuario in \r\n \r\n"
+                },
+                {
+                    "date": 1703676373002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n     usuario = entry_usuario.get()\r\n     senha = entry_senha.get()\r\n     \r\n     #Verifica se o login e senha existem\r\n-    if usuario in \r\n+    if usuario in dados_usuarios and \r\n \r\n"
+                },
+                {
+                    "date": 1703676380387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n     usuario = entry_usuario.get()\r\n     senha = entry_senha.get()\r\n     \r\n     #Verifica se o login e senha existem\r\n-    if usuario in dados_usuarios and \r\n+    if usuario in dados_usuarios and dados_usuarios[]\r\n \r\n"
+                },
+                {
+                    "date": 1703676386799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n     usuario = entry_usuario.get()\r\n     senha = entry_senha.get()\r\n     \r\n     #Verifica se o login e senha existem\r\n-    if usuario in dados_usuarios and dados_usuarios[]\r\n+    if usuario in dados_usuarios and dados_usuarios[usuario] \r\n \r\n"
+                },
+                {
+                    "date": 1703676392234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n     usuario = entry_usuario.get()\r\n     senha = entry_senha.get()\r\n     \r\n     #Verifica se o login e senha existem\r\n-    if usuario in dados_usuarios and dados_usuarios[usuario] \r\n+    if usuario in dados_usuarios and dados_usuarios[usuario] == senha\r\n \r\n"
+                },
+                {
+                    "date": 1703676432734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n     senha = entry_senha.get()\r\n     \r\n     #Verifica se o login e senha existem\r\n     if usuario in dados_usuarios and dados_usuarios[usuario] == senha:\r\n+        \r\n \r\n"
+                },
+                {
+                    "date": 1703676466169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import tkinter as tk \r\n+from tkinter import messagebox\r\n+\r\n+\r\n+#Função para verificar login\r\n+def verificar_login():\r\n+    usuario = entry_usuario.get()\r\n+    senha = entry_senha.get()\r\n+    \r\n+    #Verifica se o login e senha existem\r\n+    if usuario in dados_usuarios and dados_usuarios[usuario] == senha:\r\n+        messagebox.showinfo(\"Sucesso\")\r\n+\r\n"
+                }
+            ],
+            "date": 1703676248771,
+            "name": "Commit-0",
+            "content": "import tkinter as tk \r\nfrom tkinter import messagebox\r\n\r\n\r\n#Função para verificar login\r\ndef verificar_login():\r\n    usuario = entry_usuario.get()\r\n    \r\n    \r\n\r\n"
+        }
+    ]
+}
