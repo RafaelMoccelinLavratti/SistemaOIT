@@ -16,7 +16,7 @@ img = PhotoImage(file="img/usuario.png")
 
 #Colocar imagem no Frame
 label_img = Label (janela, image= img)
-label_img.place(x=210, y=140)
+label_img.place(x=235, y=140)
 
 
 #Entradas de texto
@@ -28,9 +28,13 @@ login.place(x=400, y=180, width=150, height=40)
 #Label / Texto
 label = Label (janela, text= "Senha")
 
+#Cor de fundo da label
+label.configure(bg="#A9A9A9", font=("Arial", font))
+
+
 
 #Posição da Label
-label.place(x=260, y=210)
+label.place(x=235, y=250)
 
 
 #Botão Realizar Login
